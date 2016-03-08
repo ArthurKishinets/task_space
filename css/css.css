@@ -1,0 +1,156 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin:0;
+ padding:0;
+ border:0;
+ outline:0;
+ font-size:100%;
+ vertical-align:baseline;
+ background:transparent;
+}
+
+/* css-reset */
+
+@font-face{ 
+	font-family: 'Roboto';
+	src: url('../font/Roboto-Regular.ttf');
+}
+body {
+	background: url(../img/12.jpg) top left no-repeat;
+	background-size: cover;
+}
+.menu {
+	/*background-color: rgb(23, 37, 51);*/
+	background: linear-gradient(45deg, rgba(23,37,51,0.92) 0%, rgba(53,75,84,0.92) 100%);
+	width: 300px;
+	height: 490px;
+	float: left;
+	border-right: 1px solid black;
+	font-family: 'Roboto';
+}
+.content {
+	margin: 7% auto;
+	width: 1110px;
+	
+}
+.general {
+	float: right;
+	height: 490px;
+	background: linear-gradient(45deg, rgba(33,46,61,0.92) 0%, rgba(50,81,102,0.92) 100%);
+	width: 809px;
+}
+.photo {
+	width: 115px;
+	height: 115px;
+	border-radius: 50%;
+	border: 10px solid rgba(0,0,0,0.3);
+	margin: 30px 0 0 80px;
+}
+.roboto-white {
+	font-family: 'Roboto', Arial, sans-serif;
+	color: white;
+}
+.roboto-blue {
+	font-family: 'Roboto', Arial, sans-serif;
+	color: rgba(126,147,179,1);
+	list-style-type: none;
+}
+.rob {
+	font-family: 'Roboto', Arial, sans-serif;
+	color: white;
+	font-size: 30px;
+}
+.menu h1.rob {
+	width: 40%;
+	margin: 0 auto;
+}
+
+li.roboto-blue {
+	padding: 13px;
+	cursor: pointer;
+}
+ul {
+	margin: 50px 0 0 30px; 
+}
+.innerg {
+	padding: 30px 0 0 30px;
+	width: 93%;
+}
+.general p + h1.rob {
+	padding: 30px 0 10px 0;
+	font-size: 16px;
+	border-bottom: 1px solid rgba(42,62,75,1);
+}
+.general div.item {
+	margin: 25px 0 0 0;
+	color: white;
+}
+.general p {display: inline-block;}
+.general .check {float: right;}
+#saved {
+	display: none;
+	float: right;
+	font-size: 18px;
+	padding: 0px 12px 2px 12px;
+	border: rgba(126,147,179,1) 3px solid;
+	border-radius: 5px;
+	margin: 15px 15px 0 0;
+}
+input[type="checkbox"].ccheck {
+    display:none;
+}
+input[type="checkbox"].ccheck + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(../img/sprite.png) left top ;
+    cursor:pointer;
+}
+input[type="checkbox"].ccheck:checked + label span {
+    background:url(../img/sprite.png) -19px top ;
+}
+.button{
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+#button2{
+	color: white;
+	background-color: rgb(24, 154, 196);
+	border-radius: 5px;
+	padding: 2px 15px 4px 15px;
+	margin: 0 0 0 30px;
+}
+#button1{
+	padding: 0px 12px 1px 12px;
+}
+.buttons {
+	float: right;
+	margin: 20px;
+	display: none;
+}
+#button1:hover {
+	border: 3px rgb(24, 154, 196) solid;
+	border-radius: 5px;
+	margin: 0 -3px 0 0;
+	color: rgb(24, 154, 196);
+}
+#button2:hover {
+	background-color: white;
+	color: rgb(24, 154, 196)
+}
+#cont1, #cont2, #cont4 {
+	display: none;
+}
